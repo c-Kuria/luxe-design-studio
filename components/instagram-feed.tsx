@@ -78,7 +78,7 @@ export function InstagramFeed() {
       </div>
       <div className="text-center mt-8">
         <Link
-          href="https://instagram.com"
+          href="https://www.instagram.com/fanisiatelier/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center text-burgundy-500 hover:underline group"

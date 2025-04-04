@@ -5,7 +5,7 @@ import { FeaturedProjects } from "@/components/featured-projects"
 import { Services } from "@/components/services"
 import { TestimonialsCarousel } from "@/components/testimonials-carousel"
 import { InstagramFeed } from "@/components/instagram-feed"
-import { AwardsShowcase } from "@/components/awards-showcase"
+import { PartnershipShowcase } from "@/components/awards-showcase"
 
 export default function Home() {
   return (
@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       {/* Awards Showcase */}
-      <AwardsShowcase />
+      <PartnershipShowcase />
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
