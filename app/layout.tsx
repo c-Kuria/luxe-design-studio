@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import type React from "react"
 import type { Metadata } from "next"
 import {
@@ -63,6 +64,7 @@ export default function RootLayout({
             <Toaster />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
