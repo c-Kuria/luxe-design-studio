@@ -8,9 +8,9 @@ const projects = [
     id: 1,
     title: "Modern Minimalist Penthouse",
     category: "Residential",
-    location: "New York, NY",
+    location: "Kiambu, Kihara",
     year: 2023,
-    image: "/images/modern-penthouse.jpg",
+    image: "/images/IMG-20241008-WA0019.jpg",
     slug: "modern-minimalist-penthouse",
   },
   {
