@@ -24,7 +24,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/fanisiatelier/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -118,21 +118,21 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-burgundy-300 shrink-0 mt-0.5" />
-                <span className="text-white/80">123 Design Avenue, New York, NY 10001</span>
+                <span className="text-white/80">Kiambu, Kihara, 102</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-burgundy-300" />
-                <Link href="tel:+12125551234" className="text-white/80 hover:text-burgundy-300 transition-colors">
-                  (212) 555-1234
+                <Link href="tel:+254113775896" className="text-white/80 hover:text-burgundy-300 transition-colors">
+                  011-377-5896
                 </Link>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-burgundy-300" />
                 <Link
-                  href="mailto:info@fanisiatelier.com"
+                  href="mailto:info@fanisiatelier.co.ke"
                   className="text-white/80 hover:text-burgundy-300 transition-colors"
                 >
-                  info@fanisiatelier.com
+                  info@fanisiatelier.co.ke
                 </Link>
               </li>
             </ul>

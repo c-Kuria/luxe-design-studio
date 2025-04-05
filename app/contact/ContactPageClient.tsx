@@ -68,11 +68,11 @@ export default function ContactPageClient() {
                 <div>
                   <h3 className="font-bold mb-1">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    123 Design Avenue
+                    102 Namba nane
                     <br />
-                    New York, NY 10001
+                    Kiambu, Kihara
                     <br />
-                    United States
+                    Kenya
                   </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function ContactPageClient() {
                 </div>
                 <div>
                   <h3 className="font-bold mb-1">Call Us</h3>
-                  <p className="text-muted-foreground">(212) 555-1234</p>
+                  <p className="text-muted-foreground">(011) 377-5896</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ export default function ContactPageClient() {
                 </div>
                 <div>
                   <h3 className="font-bold mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">info@fanisiatelier.com</p>
+                  <p className="text-muted-foreground">info@fanisiatelier.co.ke</p>
                 </div>
               </div>
 
@@ -104,9 +104,9 @@ export default function ContactPageClient() {
                 <div>
                   <h3 className="font-bold mb-1">Business Hours</h3>
                   <p className="text-muted-foreground">
-                    Monday - Friday: 9:00 AM - 6:00 PM
+                    Monday - Friday: 9:00 AM - 5:00 PM
                     <br />
-                    Saturday: 10:00 AM - 4:00 PM
+                    Saturday: 9:00 AM - 1:00 PM
                     <br />
                     Sunday: Closed
                   </p>
@@ -117,7 +117,7 @@ export default function ContactPageClient() {
             {/* Map */}
             <div className="mt-8 h-[300px] rounded-lg overflow-hidden fancy-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.0059418!3d40.7127847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Manhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680322790062!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.926347122296!2d36.74464877552199!3d-1.2115603987768764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f23e201e9164d%3A0xeb5aee215a2d18ec!2sFANISI%20HEIGHTS%20KARURA!5e0!3m2!1sen!2ske!4v1728895433026!5m2!1sen!2ske"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
