@@ -21,13 +21,13 @@ const projects = [
       "We removed several non-structural walls to create an open floor plan, installed floor-to-ceiling windows, and used a carefully curated selection of high-end materials and furnishings to achieve a luxurious yet understated aesthetic.",
     services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
     images: [
-      "/images/IMG-20241008-WA0019.jpg",
-      "/images/pentHouse1.jpeg",
-      "/images/pentLiving1.jpeg",
-      "/images/pentHouse2.jpeg",
-      "/images/pentBedroom.jpeg",
-      "/images/pentLiving2.jpeg",
-      "/images/pentBathroom.jpeg",
+      "/images/IMG-20241008-WA0019.webp",
+      "/images/pentHouse1.webp",
+      "/images/pentLiving1.webp",
+      "/images/pentHouse2.webp",
+      "/images/pentBedroom.webp",
+      "/images/pentLiving2.webp",
+      "/images/pentBathroom.webp",
     ],
     testimonial: {
       quote:

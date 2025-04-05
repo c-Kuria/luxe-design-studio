@@ -10,7 +10,7 @@ const featuredProjects = [
     title: "Modern Minimalist Penthouse",
     category: "Residential",
     location: "New York, NY",
-    image: "/images/IMG-20241008-WA0019.jpg",
+    image: "/images/IMG-20241008-WA0019.webp",
     slug: "modern-minimalist-penthouse",
   },
   {

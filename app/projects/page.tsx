@@ -10,7 +10,7 @@ const projects = [
     category: "Residential",
     location: "Kiambu, Kihara",
     year: 2023,
-    image: "/images/IMG-20241008-WA0019.jpg",
+    image: "/images/IMG-20241008-WA0019.webp",
     slug: "modern-minimalist-penthouse",
   },
   {
