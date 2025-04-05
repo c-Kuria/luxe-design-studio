@@ -28,7 +28,7 @@ const projects = [
     category: "Residential",
     location: "Malibu, CA",
     year: 2022,
-    image: "/images/beach-house.jpg",
+    image: "/images/modern-penthouse.jpg",
     slug: "contemporary-beach-house",
   },
   {
