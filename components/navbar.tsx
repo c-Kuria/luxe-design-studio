@@ -161,7 +161,7 @@ export function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="fixed inset-0 top-20 bg-white dark:bg-navy-900 z-40 md:hidden">
-          <nav className="flex flex-col p-6 space-y-4">
+          <nav className="flex flex-col p-6 space-y-4 bg-white/90 dark:bg-navy-900/95">
             {navItems.map((item) => (
               <Link
                 key={item.name}

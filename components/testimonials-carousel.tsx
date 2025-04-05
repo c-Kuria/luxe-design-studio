@@ -10,27 +10,27 @@ import { cn } from "@/lib/utils"
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Alice Njoki",
     role: "Homeowner",
-    image: "/images/testimonial-1.jpg",
+    image: "https://images.squarespace-cdn.com/content/v1/631ba8eed2196a6795698665/1669832250311-EKD5F6GWZMCGKP42PR6W/2022-08-10-Trinet-Henderson-Tiara-1485.jpg",
     quote:
-      "Working with Luxe Design Studio was an absolute pleasure. They transformed our outdated living space into a modern, functional home that perfectly reflects our style. Their attention to detail and commitment to quality exceeded our expectations.",
+      "Working with Fanisi Atelier was an absolute pleasure. They transformed our outdated living space into a modern, functional home that perfectly reflects our style. Their attention to detail and commitment to quality exceeded our expectations.",
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Michael Waweru",
     role: "Restaurant Owner",
-    image: "/images/testimonial-2.jpg",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7cUfXeNScwQ1HfIyxXch38VJp8YjNV7N6r-HV0lr6cLTvehVkdmuemV-hjo17YwzSZttmV35JS2pLgPCQL3tPvvZU105fhQK4LaTZm0PnK4OiRpJ50z6O5iwmGZ3qtW4vXOaPL9udQTDF/s1600/12+DSC_6986.jpg",
     quote:
-      "The team at Luxe Design Studio understood our vision for our new restaurant and executed it flawlessly. The space is not only beautiful but also functional for our staff and comfortable for our guests. They were professional, responsive, and a joy to work with.",
+      "The team at Fanisi Atelier Studio understood our vision for our new restaurant and executed it flawlessly. The space is not only beautiful but also functional for our staff and comfortable for our guests. They were professional, responsive, and a joy to work with.",
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "David Kariuki",
     role: "Office Manager",
-    image: "/images/testimonial-3.jpg",
+    image: "https://media.istockphoto.com/id/149061025/photo/african-american-male-businessman.jpg?s=612x612&w=0&k=20&c=cRWqTprld8ZSgad7lm10p6mnKllIdTpNBruF5GAEdiw=",
     quote:
-      "Our office renovation project was handled with incredible professionalism and creativity. The Luxe Design team listened to our needs and created a workspace that has improved productivity and employee satisfaction. I highly recommend their services.",
+      "Our office renovation project was handled with incredible professionalism and creativity. The Fanisi Atelier team listened to our needs and created a workspace that has improved productivity and employee satisfaction. I highly recommend their services.",
   },
 ]
 

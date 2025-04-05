@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <div className="animate-slideRight">
               <h2 className="text-3xl font-serif font-bold mb-6 decorative-line-left relative">
-                Crafting Exceptional Spaces Since 2005
+                Crafting Exceptional Spaces Since 2016
               </h2>
               <p className="text-navy-950 mb-6">
                 At Fanisi Atelier, we believe that great design has the power to transform not just spaces, but lives.
@@ -76,7 +76,7 @@ export default function Home() {
                 beautiful and functional.
               </p>
               <p className="text-navy-950 mb-8">
-                With over 15 years of experience in the industry, we've developed a reputation for attention to detail,
+                With over 8 years of experience in the industry, we've developed a reputation for attention to detail,
                 innovative design solutions, and exceptional client service.
               </p>
               <Button asChild className="burgundy-gradient text-white hover:opacity-90 transition-opacity">

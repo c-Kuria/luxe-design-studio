@@ -108,7 +108,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-serif font-bold mb-6 decorative-line-left relative">Our Story</h2>
             <div className="prose dark:prose-invert max-w-none">
               <p>
-                Founded in 2005 by Alexandra Reynolds, Fanisi Atelier began as a small interior design practice with a
+                Founded in 2016 by Richard Mbugua, Fanisi Atelier began as a small interior design practice with a
                 vision to transform spaces into extraordinary experiences. Over the years, we've grown into a
                 full-service design and construction studio, known for our distinctive aesthetic and meticulous
                 attention to detail.

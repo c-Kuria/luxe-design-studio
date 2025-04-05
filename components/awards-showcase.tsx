@@ -12,7 +12,7 @@ const partners = [
   {
     id: 2,
     name: "Diaspora Housing Management Ltd",
-    description: "Driving sustainable design innovations in commercial architecture.",
+    description: "Driving sustainable design innovations in residential architecture.",
     image: "https://diasporahousing.co.ke/images/DHMLLOGO.png",
     url: "https://diasporahousing.co.ke/",
   },
