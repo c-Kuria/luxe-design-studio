@@ -57,7 +57,7 @@ const galleryItems = [
   },
   {
     id: 9,
-    image: "/images/beach-house.jpg",
+    image: "/images/pentBathroom.webp",
     title: "Bathroom Design",
     categories: ["residential", "minimalist"],
   },
