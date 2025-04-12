@@ -42,12 +42,12 @@ const projects = [
   },
   {
     id: 5,
-    title: "Upscale Restaurant Design",
-    category: "Commercial",
-    location: "Los Angeles, CA",
+    title: "Stand-Alone Design",
+    category: "Residential",
+    location: "Kiambu, Karura",
     year: 2021,
-    image: "/images/instagram-2.jpg",
-    slug: "upscale-restaurant-design",
+    image: "/images/standAlone8.webp",
+    slug: "stand-alone-design",
   },
   {
     id: 6,

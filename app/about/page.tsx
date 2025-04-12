@@ -187,7 +187,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold group-hover:text-burgundy-500 transition-colors">{member.name}</h3>
                 <p className="text-burgundy-500 mb-2">{member.role}</p>
-                <p className="text-muted-foreground">{member.bio}</p>
+                {/* <p className="text-muted-foreground">{member.bio}</p> */}
               </div>
             ))}
           </div>
