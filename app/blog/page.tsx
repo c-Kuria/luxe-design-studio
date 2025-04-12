@@ -7,21 +7,21 @@ import { Button } from "@/components/ui/button"
 const blogPosts = [
   {
     id: 1,
-    title: "10 Interior Design Trends to Watch in 2023",
+    title: "10 Interior Design Trends to Watch in 2024",
     excerpt:
       "Discover the top interior design trends that are shaping homes and commercial spaces this year, from sustainable materials to bold color choices.",
-    date: "June 15, 2023",
+    date: "June 15, 2024",
     author: "Alexandra Reynolds",
     category: "Design Trends",
     image: "/images/blog-featured.jpg",
-    slug: "interior-design-trends-2023",
+    slug: "interior-design-trends-2024",
   },
   {
     id: 2,
     title: "How to Choose the Perfect Color Palette for Your Home",
     excerpt:
       "Selecting the right colors for your home can be challenging. Learn our designer-approved approach to creating harmonious color schemes that reflect your personality.",
-    date: "May 28, 2023",
+    date: "May 28, 2024",
     author: "Sophia Martinez",
     category: "Design Tips",
     image: "/images/instagram-1.jpg",
@@ -32,7 +32,7 @@ const blogPosts = [
     title: "The Art of Mixing Textures in Interior Design",
     excerpt:
       "Texture adds depth, interest, and warmth to any space. Explore how to masterfully combine different textures for a rich, layered interior.",
-    date: "May 12, 2023",
+    date: "May 12, 2024",
     author: "Michael Chen",
     category: "Design Tips",
     image: "/images/instagram-2.jpg",
@@ -43,7 +43,7 @@ const blogPosts = [
     title: "Sustainable Materials for Eco-Friendly Home Design",
     excerpt:
       "Discover environmentally conscious materials that don't compromise on style or quality for your next home renovation or design project.",
-    date: "April 30, 2023",
+    date: "April 30, 2024",
     author: "James Wilson",
     category: "Sustainability",
     image: "/images/instagram-3.jpg",
@@ -54,7 +54,7 @@ const blogPosts = [
     title: "Small Space Solutions: Maximizing Functionality in Compact Homes",
     excerpt:
       "Living in a small space doesn't mean sacrificing style or comfort. Learn clever design strategies to make the most of every square foot.",
-    date: "April 15, 2023",
+    date: "April 15, 2024",
     author: "Sophia Martinez",
     category: "Design Tips",
     image: "/images/instagram-4.jpg",
@@ -65,7 +65,7 @@ const blogPosts = [
     title: "The Psychology of Interior Design: How Your Space Affects Your Mood",
     excerpt:
       "Explore the fascinating relationship between interior design elements and psychological well-being, and how to create spaces that positively impact your mood.",
-    date: "March 28, 2023",
+    date: "March 28, 2025",
     author: "Alexandra Reynolds",
     category: "Design Theory",
     image: "/images/instagram-5.jpg",
