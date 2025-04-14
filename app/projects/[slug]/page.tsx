@@ -31,25 +31,47 @@ const projects = [
     ],
     testimonial: {
       quote:
-        "Luxe Design Studio transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+        "Fanisi Atelier Studio transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
       author: "Mattius",
       image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
     },
     slug: "modern-minimalist-penthouse",
   },
   // More projects would be here
+  // {
+  //   id: 2,
+  //   title: "Luxury Boutique Hotel",
+  //   category: "",
+  //   location: "",
+  //   year: 2023,
+  //   description:
+  //     "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+  //   services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+  //   images: [
+  //     "/images/IMG-20241008-WA0019.webp",
+  //     "/images/pentHouse1.webp",
+  //     "/images/pentLiving1.webp",
+  //     "/images/pentHouse2.webp",
+  //     "/images/pentBedroom.webp",
+  //     "/images/pentLiving2.webp",
+  //     "/images/pentBathroom.webp",
+  //   ],
+  //   testimonial: {
+  //     quote:
+  //       " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+  //     author: "Mattius",
+  //     image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+  //   },
+  //   slug: "luxury-boutique-hotel",
+  //},
   {
-    id: 1,
-    title: "Modern Minimalist Penthouse",
-    category: "Residential",
-    location: "Kiambu",
+    id: 3,
+    title: "Luxury Apartments",
+    category: "",
+    location: "",
     year: 2023,
     description:
       "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
-    challenge:
-      "The client wanted to transform a dated penthouse into a modern, minimalist space while maximizing the stunning city views and natural light.",
-    solution:
-      "We removed several non-structural walls to create an open floor plan, installed floor-to-ceiling windows, and used a carefully curated selection of high-end materials and furnishings to achieve a luxurious yet understated aesthetic.",
     services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
     images: [
       "/images/IMG-20241008-WA0019.webp",
@@ -62,12 +84,168 @@ const projects = [
     ],
     testimonial: {
       quote:
-        "Luxe Design Studio transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+        " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
       author: "Mattius",
       image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
     },
-    slug: "modern-minimalist-penthouse",
+    slug: "fanisi-tigoni-view",
   },
+  // {
+  //   id: 4,
+  //   title: "Luxury Boutique Hotel",
+  //   category: "",
+  //   location: "",
+  //   year: 2023,
+  //   description:
+  //     "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+  //   services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+  //   images: [
+  //     "/images/IMG-20241008-WA0019.webp",
+  //     "/images/pentHouse1.webp",
+  //     "/images/pentLiving1.webp",
+  //     "/images/pentHouse2.webp",
+  //     "/images/pentBedroom.webp",
+  //     "/images/pentLiving2.webp",
+  //     "/images/pentBathroom.webp",
+  //   ],
+  //   testimonial: {
+  //     quote:
+  //       " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+  //     author: "Mattius",
+  //     image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+  //   },
+  //   slug: "modern-minimalist-penthouse",
+  // },
+  {
+    id: 5,
+    title: "Stand-Alone Design",
+    category: "",
+    location: "",
+    year: 2021,
+    description:
+      "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+    services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+    images: [
+      "/images/IMG-20241008-WA0019.webp",
+      "/images/pentHouse1.webp",
+      "/images/pentLiving1.webp",
+      "/images/pentHouse2.webp",
+      "/images/pentBedroom.webp",
+      "/images/pentLiving2.webp",
+      "/images/pentBathroom.webp",
+    ],
+    testimonial: {
+      quote:
+        " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+      author: "Mattius",
+      image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+    },
+    slug: "stand-alone-design",
+  },
+  // {
+  //   id: 6,
+  //   title: "Luxury Boutique Hotel",
+  //   category: "",
+  //   location: "",
+  //   year: 2023,
+  //   description:
+  //     "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+  //   services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+  //   images: [
+  //     "/images/IMG-20241008-WA0019.webp",
+  //     "/images/pentHouse1.webp",
+  //     "/images/pentLiving1.webp",
+  //     "/images/pentHouse2.webp",
+  //     "/images/pentBedroom.webp",
+  //     "/images/pentLiving2.webp",
+  //     "/images/pentBathroom.webp",
+  //   ],
+  //   testimonial: {
+  //     quote:
+  //       " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+  //     author: "Mattius",
+  //     image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+  //   },
+  //   slug: "modern-minimalist-penthouse",
+  // },
+  {
+    id: 7,
+    title: "Fanisi Heights",
+    category: "",
+    location: "",
+    year: 2023,
+    description:
+      "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+    services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+    images: [
+      "/images/IMG-20241008-WA0019.webp",
+      "/images/pentHouse1.webp",
+      "/images/pentLiving1.webp",
+      "/images/pentHouse2.webp",
+      "/images/pentBedroom.webp",
+      "/images/pentLiving2.webp",
+      "/images/pentBathroom.webp",
+    ],
+    testimonial: {
+      quote:
+        " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+      author: "Mattius",
+      image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+    },
+    slug: "fanisi-heights",
+  },
+  // {
+  //   id: 2,
+  //   title: "Luxury Boutique Hotel",
+  //   category: "",
+  //   location: "",
+  //   year: 2023,
+  //   description:
+  //     "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+  //   services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+  //   images: [
+  //     "/images/IMG-20241008-WA0019.webp",
+  //     "/images/pentHouse1.webp",
+  //     "/images/pentLiving1.webp",
+  //     "/images/pentHouse2.webp",
+  //     "/images/pentBedroom.webp",
+  //     "/images/pentLiving2.webp",
+  //     "/images/pentBathroom.webp",
+  //   ],
+  //   testimonial: {
+  //     quote:
+  //       " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+  //     author: "Mattius",
+  //     image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+  //   },
+  //   slug: "modern-minimalist-penthouse",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Luxury Boutique Hotel",
+  //   category: "",
+  //   location: "",
+  //   year: 2023,
+  //   description:
+  //     "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
+  //   services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+  //   images: [
+  //     "/images/IMG-20241008-WA0019.webp",
+  //     "/images/pentHouse1.webp",
+  //     "/images/pentLiving1.webp",
+  //     "/images/pentHouse2.webp",
+  //     "/images/pentBedroom.webp",
+  //     "/images/pentLiving2.webp",
+  //     "/images/pentBathroom.webp",
+  //   ],
+  //   testimonial: {
+  //     quote:
+  //       " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+  //     author: "Mattius",
+  //     image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+  //   },
+  //   slug: "modern-minimalist-penthouse",
+  // },
 ]
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {

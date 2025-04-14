@@ -52,12 +52,8 @@ export function FeaturedProjects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredProjects.map((project) => (
-            <Link
-              key={project.id}
-              href={`/projects/${project.slug}\`}  => (
-            <Link key={project.id} href={\`/projects/${project.slug}`}
-              className="group"
-            >
+                        <Link key={project.id} href={`/projects/${project.slug}`} className="group">
+
               <Card className="overflow-hidden border-0 bg-transparent fancy-border">
                 <div className="image-container aspect-[4/3]">
                   <Image
