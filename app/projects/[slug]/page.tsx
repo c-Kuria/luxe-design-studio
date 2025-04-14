@@ -66,28 +66,28 @@ const projects = [
   //},
   {
     id: 3,
-    title: "Luxury Apartments",
-    category: "",
-    location: "",
-    year: 2023,
+    title: "Fanisi Tigoni View",
+    category: "Residential",
+    location: "Ruaka",
+    year: 2022,
     description:
-      "A complete renovation of a 135 sq ft penthouse near Nairobi. The design focuses on clean lines, a neutral color palette, and luxurious materials to create a sophisticated urban retreat.",
-    services: ["Interior Design", "Space Planning", "Custom Furniture", "Lighting Design", "Art Curation"],
+      "An exquisite residential project situated on prime land in Ruaka Municipality.",
+    services: ["Smart Interior Design", "Family-Friendly Space Planning", "Energy-Efficient Lighting Design", "Custom Smart Furniture Solutions", "Lifestyle Art & Decor Curation"],
     images: [
-      "/images/IMG-20241008-WA0019.webp",
-      "/images/pentHouse1.webp",
-      "/images/pentLiving1.webp",
-      "/images/pentHouse2.webp",
-      "/images/pentBedroom.webp",
-      "/images/pentLiving2.webp",
-      "/images/pentBathroom.webp",
+      "https://diasporahousing.co.ke/images/TigoniViewrender1.webp",
+      "https://diasporahousing.co.ke/images/FTV1.webp",
+      "https://diasporahousing.co.ke/images/FTV2.webp",
+      "https://diasporahousing.co.ke/images/FTV4.webp",
+      "https://diasporahousing.co.ke/images/FTV6.webp",
+      "/images/IMG_7075.webp",
+      "/images/IMG-20240210-WA0026.webp",
     ],
-    testimonial: {
-      quote:
-        " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
-      author: "Mattius",
-      image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
-    },
+    // testimonial: {
+    //   quote:
+    //     " transformed our penthouse into a sophisticated, modern home that exceeds our expectations. Their attention to detail and understanding of our vision was remarkable.",
+    //   author: "Mattius",
+    //   image: "https://images.dailykos.com/images/921524/story_image/Cruise.jpg?1614366865",
+    //},
     slug: "fanisi-tigoni-view",
   },
   // {
@@ -298,11 +298,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg mb-6">{project.description}</p>
 
-              <h3 className="text-xl font-bold mt-8 mb-4">The Challenge</h3>
+              {/* <h3 className="text-xl font-bold mt-8 mb-4">The Challenge</h3>
               <p>{project.challenge}</p>
 
               <h3 className="text-xl font-bold mt-8 mb-4">Our Solution</h3>
-              <p>{project.solution}</p>
+              <p>{project.solution}</p> */}
 
               <h3 className="text-xl font-bold mt-8 mb-4">Services Provided</h3>
               <ul className="list-disc pl-5 space-y-1">

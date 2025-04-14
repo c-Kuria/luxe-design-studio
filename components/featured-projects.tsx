@@ -19,7 +19,7 @@ const featuredProjects = [
     category: "Residential",
     location: "Kiambu, Ruaka",
     image: "https://diasporahousing.co.ke/images/TigoniViewrender1.webp",
-    slug: "Fanisi Tigoni View",
+    slug: "fanisi-tigoni-view",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const featuredProjects = [
     category: "Residential",
     location: "Kiambu, Kihara",
     image: "https://diasporahousing.co.ke/images/FHRENDER.webp",
-    slug: "contemporary-beach-house",
+    slug: "fanisi-heights",
   },
 ]
 
