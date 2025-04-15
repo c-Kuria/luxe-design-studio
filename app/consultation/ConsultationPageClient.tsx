@@ -25,7 +25,7 @@ export default function QuotationPageClient() {
     areaSize: "",
     projectCategory: "",
     serviceType: "",
-    focusAreas: "",
+    serviceDetails: "",
     designStyle: "",
     hasDrawings: "",
     startDate: "",
@@ -65,7 +65,7 @@ export default function QuotationPageClient() {
         areaSize: "",
         projectCategory: "",
         serviceType: "",
-        focusAreas: "",
+        serviceDetails: "",
         designStyle: "",
         hasDrawings: "",
         startDate: "",
@@ -199,14 +199,14 @@ export default function QuotationPageClient() {
                 </SelectContent>
               </Select>
 
-              {/* <Textarea
-                id="focusAreas"
-                name="focusAreas"
+              <Textarea
+                id="serviceDetails"
+                name="serviceDetails"
                 rows={3}
-                placeholder="Which specific areas should we focus on? (e.g., kitchen, bathroom, office)"
-                value={formData.focusAreas}
+                placeholder="Detailed description of services required"
+                value={formData.serviceDetails}
                 onChange={handleChange}
-              /> */}
+              />
 
               <Input
                 id="designStyle"
