@@ -24,8 +24,8 @@ export async function POST(req: Request) {
     } = body
 
     const response = await resend.emails.send({
-      from: process.env.EMAIL_FROM || "no-reply@yourdomain.com",
-      to: ["briankuria1812@gmail.com", "briannkuria@gmailcom"], // 👈 multiple recipients
+      from: process.env.EMAIL_FROM || "no-reply@fanisatelier.vercel.app",
+      to: ["briankuria1812@gmail.com", "briannkuria@gmail.com"], // 👈 multiple recipients
       subject: "New Quotation Request",
       html: `
         <h2>New Quotation Request</h2>
