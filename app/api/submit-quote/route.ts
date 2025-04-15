@@ -1,25 +1,57 @@
-// app/api/submit-quote/route.ts
 import { NextResponse } from "next/server"
+import { Resend } from "resend"
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
   try {
     const body = await req.json()
 
-    console.log("🚀 Received Quotation Form:", body)
+    const {
+      name,
+      email,
+      phone,
+      propertyType,
+      location,
+      areaSize,
+      projectCategory,
+      serviceType,
+      focusAreas, // or serviceDetails if renamed
+      designStyle,
+      hasDrawings,
+      startDate,
+      budget,
+    } = body
 
-    // You can later:
-    // - Store it in a DB
-    // - Send an email
-    // - Push it to a webhook
-    // For now, just return success
-    return NextResponse.json({
-      success: true,
-      message: "Quotation received successfully!",
+    const response = await resend.emails.send({
+      from: process.env.EMAIL_FROM || "no-reply@yourdomain.com",
+      to: ["briankuria1812@gmail.com", "briannkuria@gmailcom"], // 👈 multiple recipients
+      subject: "New Quotation Request",
+      html: `
+        <h2>New Quotation Request</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Property Type:</strong> ${propertyType}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Area Size:</strong> ${areaSize}</p>
+        <p><strong>Project Category:</strong> ${projectCategory}</p>
+        <p><strong>Service Type:</strong> ${serviceType}</p>
+        <p><strong>Service Details:</strong> ${focusAreas}</p>
+        <p><strong>Design Style:</strong> ${designStyle}</p>
+        <p><strong>Has Drawings:</strong> ${hasDrawings}</p>
+        <p><strong>Preferred Start Date:</strong> ${startDate}</p>
+        <p><strong>Budget:</strong> ${budget}</p>
+      `,
     })
+
+    console.log("📤 Email response:", response)
+
+    return NextResponse.json({ success: true, message: "Email sent!" })
   } catch (error) {
-    console.error("❌ API Error:", error)
+    console.error("❌ Failed to send email:", error)
     return NextResponse.json(
-      { success: false, message: "Something went wrong." },
+      { success: false, message: "Failed to send email." },
       { status: 500 }
     )
   }
