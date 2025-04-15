@@ -30,6 +30,7 @@ export default function QuotationPageClient() {
     hasDrawings: "",
     startDate: "",
     budget: "",
+    file: null as File | null,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,34 +47,124 @@ export default function QuotationPageClient() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   const { file, ...dataToSend } = formData;
+
+  //   try {
+  //     const response = await fetch("/api/submit-quote", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(dataToSend),
+  //     });
+
+  //     const result = await response.json();
+
+  //     toast({
+  //       title: result.success ? "Quotation Sent!" : "Error",
+  //       description: result.message,
+  //     });
+
+  //     if (result.success) {
+  //       // Reset form
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         propertyType: "",
+  //         location: "",
+  //         areaSize: "",
+  //         projectCategory: "",
+  //         serviceType: "",
+  //         serviceDetails: "", // or serviceDetails if renamed
+  //         designStyle: "",
+  //         hasDrawings: "",
+  //         startDate: "",
+  //         budget: "",
+  //         file: null,
+  //       });
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     toast({
+  //       title: "Error",
+  //       description: "Something went wrong. Please try again.",
+  //     });
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    setTimeout(() => {
+  
+    try {
+      const response = await fetch("https://formspree.io/f/xyzevlkv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          propertyType: formData.propertyType,
+          location: formData.location,
+          areaSize: formData.areaSize,
+          projectCategory: formData.projectCategory,
+          serviceType: formData.serviceType,
+          serviceDetails: formData.serviceDetails, // or renamed if you changed the field name
+          designStyle: formData.designStyle,
+          hasDrawings: formData.hasDrawings,
+          startDate: formData.startDate,
+          budget: formData.budget,
+        }),
+      });
+  
+      if (response.ok) {
+        toast({
+          title: "Quotation Sent!",
+          description: "We'll review your request and respond shortly.",
+        });
+  
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          propertyType: "",
+          location: "",
+          areaSize: "",
+          projectCategory: "",
+          serviceType: "",
+          serviceDetails: "", // or serviceDetails
+          designStyle: "",
+          hasDrawings: "",
+          startDate: "",
+          budget: "",
+          file: null,
+        });
+  
+      } else {
+        toast({
+          title: "Error",
+          description: "There was a problem submitting the form.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
       toast({
-        title: "Quotation Request Sent!",
-        description:
-          "We’ll get back to you shortly with your personalized quote.",
+        title: "Network Error",
+        description: "Could not submit your request. Please try again later.",
+        variant: "destructive",
       });
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        propertyType: "",
-        location: "",
-        areaSize: "",
-        projectCategory: "",
-        serviceType: "",
-        serviceDetails: "",
-        designStyle: "",
-        hasDrawings: "",
-        startDate: "",
-        budget: "",
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
+  
 
   return (
     <div className="pt-24 pb-20">

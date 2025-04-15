@@ -40,7 +40,7 @@ export default function Home() {
               variant="outline"
               className="bg-transparent text-white border-white hover:bg-white/10"
             >
-              <Link href="/consultation">Book Quotation</Link>
+              <Link href="/quotation">Book Quotation</Link>
             </Button>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="burgundy-gradient text-white hover:opacity-90 transition-opacity">
-              <Link href="/consultation">Book a Quotation</Link>
+              <Link href="/quotattion">Book a Quotation</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <Link href="/contact">Contact Us</Link>
