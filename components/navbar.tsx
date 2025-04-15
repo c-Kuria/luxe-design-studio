@@ -141,7 +141,7 @@ export function Navbar() {
               asChild
               className="burgundy-gradient text-white hover:opacity-90 transition-opacity"
             >
-              <Link href="/consultation">Book Consultation</Link>
+              <Link href="/consultation">Book Quotation</Link>
             </Button>
           </nav>
 
@@ -183,7 +183,7 @@ export function Navbar() {
                 className="w-full burgundy-gradient text-white hover:opacity-90 transition-opacity py-6 text-lg"
               >
                 <Link href="/consultation" onClick={() => setIsOpen(false)}>
-                  Book Consultation
+                  Book Quotation
                 </Link>
               </Button>
             </div>
