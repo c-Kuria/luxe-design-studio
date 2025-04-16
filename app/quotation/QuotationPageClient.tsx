@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { FileUpload } from "@/components/FileUpload";
 
 export default function QuotationPageClient() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ export default function QuotationPageClient() {
     hasDrawings: "",
     startDate: "",
     budget: "",
-    file: null as File | null,
+    fileUrl: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,55 +48,13 @@ export default function QuotationPageClient() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
+  const handleFileUpload = (url: string) => {
+    setFormData((prev) => ({ ...prev, fileUrl: url }));
+  };
 
-  //   const { file, ...dataToSend } = formData;
-
-  //   try {
-  //     const response = await fetch("/api/submit-quote", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(dataToSend),
-  //     });
-
-  //     const result = await response.json();
-
-  //     toast({
-  //       title: result.success ? "Quotation Sent!" : "Error",
-  //       description: result.message,
-  //     });
-
-  //     if (result.success) {
-  //       // Reset form
-  //       setFormData({
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         propertyType: "",
-  //         location: "",
-  //         areaSize: "",
-  //         projectCategory: "",
-  //         serviceType: "",
-  //         serviceDetails: "", // or serviceDetails if renamed
-  //         designStyle: "",
-  //         hasDrawings: "",
-  //         startDate: "",
-  //         budget: "",
-  //         file: null,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     toast({
-  //       title: "Error",
-  //       description: "Something went wrong. Please try again.",
-  //     });
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // };
+  const handleFileUploadError = (error: Error) => {
+    console.error("File upload error:", error);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -108,19 +67,8 @@ export default function QuotationPageClient() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          propertyType: formData.propertyType,
-          location: formData.location,
-          areaSize: formData.areaSize,
-          projectCategory: formData.projectCategory,
-          serviceType: formData.serviceType,
-          serviceDetails: formData.serviceDetails, // or renamed if you changed the field name
-          designStyle: formData.designStyle,
-          hasDrawings: formData.hasDrawings,
-          startDate: formData.startDate,
-          budget: formData.budget,
+          ...formData,
+          fileUrl: formData.fileUrl || "No file uploaded",
         }),
       });
   
@@ -139,12 +87,12 @@ export default function QuotationPageClient() {
           areaSize: "",
           projectCategory: "",
           serviceType: "",
-          serviceDetails: "", // or serviceDetails
+          serviceDetails: "",
           designStyle: "",
           hasDrawings: "",
           startDate: "",
           budget: "",
-          file: null,
+          fileUrl: "",
         });
   
       } else {
@@ -164,7 +112,6 @@ export default function QuotationPageClient() {
       setIsSubmitting(false);
     }
   };
-  
 
   return (
     <div className="pt-24 pb-20">
@@ -307,51 +254,18 @@ export default function QuotationPageClient() {
                 onChange={handleChange}
               />
 
-              {/* <Select
-                value={formData.hasDrawings}
-                onValueChange={(value) =>
-                  handleSelectChange("hasDrawings", value)
-                }
-              >
-                <SelectTrigger>
-                  <SelectValue placeholder="Do you have architectural drawings or floor plans?" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="yes">Yes</SelectItem>
-                  <SelectItem value="no">No</SelectItem>
-                </SelectContent>
-              </Select> */}
-              <div>
-                <label
-                  htmlFor="fileUpload"
-                  className="block text-sm font-medium mb-2"
-                >
-                  Upload drawings or an image of the space (optional)
+              <div className="space-y-2">
+                <label className="text-sm font-medium">
+                  Upload drawings or images (optional)
                 </label>
-                <Input
-                  id="fileUpload"
-                  name="fileUpload"
-                  type="file"
-                  accept=".pdf,.jpg,.jpeg,.png"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (file) {
-                      setFormData((prev) => ({ ...prev, file }));
-                    }
-                  }}
+                <FileUpload
+                  onUploadComplete={handleFileUpload}
+                  onUploadError={handleFileUploadError}
                 />
-                <p className="text-sm text-muted-foreground mt-1">
-                  Accepted formats: PDF, JPG, PNG
+                <p className="text-sm text-muted-foreground">
+                  Accepted formats: PDF, JPG, PNG (max 4MB)
                 </p>
               </div>
-
-              {/* <Input
-                id="startDate"
-                name="startDate"
-                type="date"
-                value={formData.startDate}
-                onChange={handleChange}
-              /> */}
 
               <Input
                 id="budget"
