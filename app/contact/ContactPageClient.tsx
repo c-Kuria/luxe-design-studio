@@ -29,21 +29,45 @@ export default function ContactPageClient() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://formspree.io/f/xyzevlkv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "We'll get back to you as soon as possible.",
+        })
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        throw new Error("Failed to send message")
+      }
+    } catch (error) {
       toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
       })
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      })
+    } finally {
       setIsSubmitting(false)
-    }, 1500)
+    }
   }
 
   return (
@@ -68,11 +92,11 @@ export default function ContactPageClient() {
                 <div>
                   <h3 className="font-bold mb-1">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    102 Namba nane
+                    Off USIU Road,
                     <br />
-                    Kiambu, Kihara
+                    Safari Park Close
                     <br />
-                    Kenya
+                    Nairobi, Kenya
                   </p>
                 </div>
               </div>
@@ -143,7 +167,7 @@ export default function ContactPageClient() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="border-primary/20 focus:border-primary"
+                  className="border-navy-700 bg-white text-navy-900 focus:border-primary"
                 />
               </div>
 
@@ -159,7 +183,7 @@ export default function ContactPageClient() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-primary/20 focus:border-primary"
+                    className="border-navy-700 bg-white text-navy-900 focus:border-primary"
                   />
                 </div>
                 <div>
@@ -172,7 +196,7 @@ export default function ContactPageClient() {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="border-primary/20 focus:border-primary"
+                    className="border-navy-700 bg-white text-navy-900 focus:border-primary"
                   />
                 </div>
               </div>
@@ -187,7 +211,7 @@ export default function ContactPageClient() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="border-primary/20 focus:border-primary"
+                  className="border-navy-700 bg-white text-navy-900 focus:border-primary"
                 />
               </div>
 
@@ -202,13 +226,13 @@ export default function ContactPageClient() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="border-primary/20 focus:border-primary"
+                  className="border-navy-700 bg-white text-navy-900 focus:border-primary"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full gold-gradient text-white hover:opacity-90 transition-opacity"
+                className="w-full burgundy-gradient text-white hover:bg-navy-800 transition-colors border-2"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
