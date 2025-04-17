@@ -16,15 +16,37 @@ export function NewsletterForm() {
     e.preventDefault()
     setIsLoading(true)
 
-    // Simulate API call
-    setTimeout(() => {
-      toast({
-        title: "Success!",
-        description: "You've been subscribed to our newsletter.",
+    try {
+      const response = await fetch("https://formspree.io/f/xyzevlkv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          subject: "New Newsletter Subscription",
+          message: `New newsletter subscription from: ${email}`,
+        }),
       })
-      setEmail("")
+
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "You've been subscribed to our newsletter.",
+        })
+        setEmail("")
+      } else {
+        throw new Error("Failed to subscribe")
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      })
+    } finally {
       setIsLoading(false)
-    }, 1000)
+    }
   }
 
   return (
