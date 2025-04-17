@@ -7,59 +7,59 @@ import Link from "next/link"
 const team = [
   {
     id: 1,
-    name: "John Doe",
-    role: "Founder & CEO",
-    image: "/images/team/john-doe.webp",
-    description: "With over 20 years of experience in interior design, John leads our team with vision and expertise.",
+    name: "Richard Mbugua",
+    role: "Founder & Principal Designer",
+    image: "",
+    // bio: "With over 15 years of experience in interior design and architecture, Richard founded Fanisi Atelier with a vision to create spaces that are both beautiful and functional.",
   },
   {
     id: 2,
-    name: "Jane Smith",
-    role: "Lead Designer",
-    image: "/images/team/jane-smith.webp",
-    description: "Jane brings creativity and innovation to every project, ensuring unique and stunning designs.",
+    name: "Bernard Kainamia",
+    role: "Project Manager",
+    image: "",
+    // bio: "Bernard ensures seamless execution from concept to completion. With a strong foundation in construction management and client relations, he bridges the gap between creativity and delivery — always on time, always within scope",
   },
   {
     id: 3,
-    name: "Mike Johnson",
-    role: "Project Manager",
-    image: "/images/team/mike-johnson.webp",
-    description: "Mike ensures every project runs smoothly and meets our high standards of quality.",
+    name: "Miriam Mwangi",
+    role: "Creative Director",
+    image: "",
+    // bio: "Miriam leads the creative vision of the studio, ensuring every project aligns with the brand’s identity and aesthetic values. With a background in fine arts and environmental design, she brings conceptual clarity and storytelling to every space.",
   },
   {
     id: 4,
-    name: "Sarah Williams",
-    role: "Senior Designer",
-    image: "/images/team/sarah-williams.webp",
-    description: "Sarah specializes in luxury residential designs and client satisfaction.",
+    name: "Zara Wanjiku",
+    role: "Senior Interior Designer",
+    image: "",
+    // bio: "Zara's keen eye for color and texture has helped shape the studio's distinctive aesthetic, blending contemporary elements with timeless design principles.",
   },
   {
     id: 5,
-    name: "David Brown",
-    role: "Architect",
-    image: "/images/team/david-brown.webp",
-    description: "David's architectural expertise brings structural integrity to our designs.",
+    name: "Joe Muhanda",
+    role: "Client Relations Manager",
+    image: "",
+    // bio: "Joe oversees all client engagement with a focus on professionalism, clarity, and trust. He serves as the primary point of contact, ensuring expectations are met and relationships are managed with care throughout every phase of the project.",
   },
   {
     id: 6,
-    name: "Emily Davis",
-    role: "Interior Stylist",
-    image: "/images/team/emily-davis.webp",
-    description: "Emily's keen eye for detail ensures every space is perfectly styled.",
+    name: "Brian Kuria",
+    role: "Design Technologist",
+    image: "",
+    // bio: "Brian bridges the gap between design and technology, integrating digital solutions into spatial experiences. He also oversees the studio’s digital workflows and design software infrastructure.",
+  },
+  {
+    id: 7,
+    name: "James Wilson",
+    role: "Construction Manager",
+    image: "",
+    // bio: "With a background in construction and project management, James ensures that every design is executed with precision and attention to detail.",
   },
   {
     id: 8,
-    name: "Robert Wilson",
-    role: "Technical Director",
-    image: "/images/team/robert-wilson.webp",
-    description: "Robert oversees the technical aspects of our projects with precision.",
-  },
-  {
-    id: 9,
-    name: "Lisa Anderson",
-    role: "Client Relations",
-    image: "/images/team/lisa-anderson.webp",
-    description: "Lisa ensures our clients' needs are met throughout the design process.",
+    name: "Hudson Sitati",
+    role: "Cost Analyst",
+    image: "",
+    // bio: "With a background in construction and project management, James ensures that every design is executed with precision and attention to detail.",
   },
 ]
 
@@ -187,7 +187,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold group-hover:text-burgundy-500 transition-colors">{member.name}</h3>
                 <p className="text-burgundy-500 mb-2">{member.role}</p>
-                <p className="text-muted-foreground">{member.description}</p>
+                {/* <p className="text-muted-foreground">{member.bio}</p> */}
               </div>
             ))}
           </div>
