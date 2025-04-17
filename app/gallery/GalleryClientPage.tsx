@@ -150,7 +150,7 @@ export default function GalleryClientPage() {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="image-container aspect-[4/3] cursor-pointer fancy-border"
+                className="image-container aspect-[4/3] cursor-pointer fancy-border relative"
                 onClick={() => setSelectedImage(item.image)}
               >
                 <Image
@@ -158,6 +158,7 @@ export default function GalleryClientPage() {
                   alt={item.title}
                   fill
                   className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 text-white">
@@ -191,17 +192,22 @@ export default function GalleryClientPage() {
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
-              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
             >
               <X className="h-8 w-8" />
             </button>
-            <div className="relative w-full max-w-4xl max-h-[80vh] aspect-auto animate-zoomIn">
+            <div className="relative w-full max-w-4xl h-[80vh] animate-zoomIn">
               <Image
-                src={selectedImage || "/placeholder.svg"}
+                src={selectedImage}
                 alt="Gallery image fullscreen"
                 fill
                 className="object-contain"
+                sizes="100vw"
+                priority
               />
             </div>
           </div>
