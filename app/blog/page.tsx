@@ -55,7 +55,7 @@ const blogPosts = [
     excerpt:
       "Living in a small space doesn't mean sacrificing style or comfort. Learn clever design strategies to make the most of every square foot.",
     date: "April 15, 2024",
-    author: "Sophia Martinez",
+    author: "John Crez",
     category: "Design Tips",
     image: "/images/instagram-4.jpg",
     slug: "small-space-solutions",
@@ -66,7 +66,7 @@ const blogPosts = [
     excerpt:
       "Explore the fascinating relationship between interior design elements and psychological well-being, and how to create spaces that positively impact your mood.",
     date: "March 28, 2025",
-    author: "Alexandra Reynolds",
+    author: "Beatrice Wangari",
     category: "Design Theory",
     image: "/images/instagram-5.jpg",
     slug: "psychology-interior-design",
@@ -156,7 +156,7 @@ export default function BlogPage() {
                   <p className="text-muted-foreground mb-4 flex-grow">{post.excerpt}</p>
                   <div className="flex items-center mt-auto">
                     <div className="relative h-8 w-8 rounded-full overflow-hidden mr-2">
-                      <Image src="/images/testimonial-1.jpg" alt={post.author} fill className="object-cover" />
+                      {/* <Image src="/images/testimonial-1.jpg" alt={post.author} fill className="object-cover" /> */}
                     </div>
                     <span className="text-sm font-medium">{post.author}</span>
                   </div>
