@@ -86,7 +86,8 @@ export default function FAQsPage() {
             <p className="text-muted-foreground mb-6">
               Don't see your question here? Feel free to reach out to us directly.
             </p>
-            <Button asChild>
+            <Button asChild
+            className="burgundy-gradient text-white">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
