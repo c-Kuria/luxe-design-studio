@@ -6,9 +6,9 @@ import { Card, CardContent } from "@/components/ui/card"
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Alice Njoki",
     role: "Homeowner",
-    location: "New York, NY",
+    location: "Nairobi",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "Working with Fanisi Atelier was an absolute pleasure. They transformed our outdated living space into a modern, functional home that perfectly reflects our style. Their attention to detail and commitment to quality exceeded our expectations.",
@@ -16,9 +16,9 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Michael Waweru",
     role: "Restaurant Owner",
-    location: "Miami, FL",
+    location: "Ruaka",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "The team at Fanisi Atelier understood our vision for our new restaurant and executed it flawlessly. The space is not only beautiful but also functional for our staff and comfortable for our guests. They were professional, responsive, and a joy to work with.",
@@ -26,9 +26,9 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "David Kariuki",
     role: "Office Manager",
-    location: "Chicago, IL",
+    location: "Westlands",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "Our office renovation project was handled with incredible professionalism and creativity. The Fanisi Atelier team listened to our needs and created a workspace that has improved productivity and employee satisfaction. I highly recommend their services.",
@@ -36,9 +36,9 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "David Thompson",
+    name: "Thomas Thompson",
     role: "Homeowner",
-    location: "Los Angeles, CA",
+    location: "Kiambu",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "From the initial consultation to the final reveal, Fanisi Atelier made the process enjoyable and stress-free. They transformed our kitchen and living area into a stunning, open-concept space that's perfect for entertaining. Their team was communicative, respectful, and delivered on time and within budget.",
@@ -46,9 +46,9 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Jennifer Williams",
+    name: "Jennifer Gathoni",
     role: "Boutique Hotel Owner",
-    location: "Boston, MA",
+    location: "Ruaka",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "Fanisi Atelier brought our boutique hotel vision to life with their exceptional design skills. They created a unique, memorable atmosphere that our guests consistently rave about. Their ability to balance aesthetics with functionality has been crucial to our success.",
@@ -56,9 +56,9 @@ const testimonials = [
   },
   {
     id: 6,
-    name: "Robert Garcia",
+    name: "Robert Mwaura",
     role: "Real Estate Developer",
-    location: "San Francisco, CA",
+    location: "Kiambu",
     image: "/placeholder.svg?height=100&width=100",
     quote:
       "We've partnered with Fanisi Atelier on multiple luxury condominium projects, and they consistently deliver outstanding results. Their designs stand out in a competitive market, helping our properties sell faster and at premium prices. They're true professionals who understand both design and business.",
@@ -66,7 +66,7 @@ const testimonials = [
   },
   {
     id: 7,
-    name: "Amanda Lee",
+    name: "Christine Njeru",
     role: "Homeowner",
     location: "Seattle, WA",
     image: "/placeholder.svg?height=100&width=100",
@@ -76,7 +76,7 @@ const testimonials = [
   },
   {
     id: 8,
-    name: "Thomas Wilson",
+    name: "Nelson Mugambi",
     role: "Art Gallery Owner",
     location: "New York, NY",
     image: "/placeholder.svg?height=100&width=100",
@@ -122,7 +122,7 @@ export default function TestimonialsPage() {
                     <p className="text-muted-foreground text-sm">
                       {testimonial.role}, {testimonial.location}
                     </p>
-                    <p className="text-primary text-sm mt-1">{testimonial.project}</p>
+                    <p className="text-muted-foreground text-sm mt-1">{testimonial.project}</p>
                   </div>
                 </div>
               </CardContent>
