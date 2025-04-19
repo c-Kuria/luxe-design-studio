@@ -28,8 +28,6 @@ export function Navbar() {
   const [atTop, setAtTop] = useState(true);
   const pathname = usePathname();
   const isMobile = useMobile();
-  const { theme } = useTheme();
-  const isDarkTheme = theme === "dark";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,15 +98,18 @@ export function Navbar() {
                   )}
                 >
                   <Image
-                    src={
-                      isDarkTheme
-                        ? "/images/DarkScrollImage.jpg"
-                        : "/images/fanisi-atelier-scroll-logo.png"
-                    }
+                    src="/images/fanisi-atelier-scroll-logo.png"
                     alt="Fanisi Atelier"
                     width={120}
                     height={50}
-                    className="object-contain"
+                    className="object-contain dark:hidden"
+                  />
+                  <Image
+                    src="/images/DarkScrollImage.jpg"
+                    alt="Fanisi Atelier"
+                    width={120}
+                    height={50}
+                    className="object-contain hidden dark:block"
                   />
                 </div>
               </div>
