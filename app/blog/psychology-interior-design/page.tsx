@@ -40,75 +40,68 @@ export default function BlogPostPage() {
               <p>Our surroundings have a profound impact on our psychological well-being. Understanding the psychology behind interior design can help create spaces that promote positive emotions and mental health.</p>
 
               <h2>Color Psychology in Design</h2>
-              <p>How colors affect mood:
-                <ul>
-                  <li>Blue: Calming, promotes focus and productivity</li>
-                  <li>Green: Refreshing, associated with nature and growth</li>
-                  <li>Yellow: Energizing, stimulates creativity</li>
-                  <li>Red: Stimulating, increases energy and passion</li>
-                  <li>Neutral tones: Grounding, creates balance</li>
-                </ul>
-              </p>
+              <p>How colors affect mood:</p>
+              <ul>
+                <li>Blue: Calming, promotes focus and productivity</li>
+                <li>Green: Refreshing, associated with nature and growth</li>
+                <li>Yellow: Energizing, stimulates creativity</li>
+                <li>Red: Stimulating, increases energy and passion</li>
+                <li>Neutral tones: Grounding, creates balance</li>
+              </ul>
 
               <h2>Light and Well-being</h2>
-              <p>The impact of lighting:
-                <ul>
-                  <li>Natural light: Boosts mood and circadian rhythm</li>
-                  <li>Warm lighting: Creates comfort and relaxation</li>
-                  <li>Task lighting: Enhances focus and productivity</li>
-                  <li>Ambient lighting: Sets overall mood and atmosphere</li>
-                </ul>
-              </p>
+              <p>The impact of lighting:</p>
+              <ul>
+                <li>Natural light: Boosts mood and circadian rhythm</li>
+                <li>Warm lighting: Creates comfort and relaxation</li>
+                <li>Task lighting: Enhances focus and productivity</li>
+                <li>Ambient lighting: Sets overall mood and atmosphere</li>
+              </ul>
 
               <h2>Space and Perception</h2>
-              <p>How space affects our psychology:
-                <ul>
-                  <li>Open spaces: Promote freedom and creativity</li>
-                  <li>Cozy spaces: Provide security and comfort</li>
-                  <li>Cluttered spaces: Can increase stress and anxiety</li>
-                  <li>Organized spaces: Promote clarity and focus</li>
-                </ul>
-              </p>
+              <p>How space affects our psychology:</p>
+              <ul>
+                <li>Open spaces: Promote freedom and creativity</li>
+                <li>Cozy spaces: Provide security and comfort</li>
+                <li>Cluttered spaces: Can increase stress and anxiety</li>
+                <li>Organized spaces: Promote clarity and focus</li>
+              </ul>
 
               <h2>Texture and Sensory Experience</h2>
-              <p>The role of texture in emotional response:
-                <ul>
-                  <li>Soft textures: Comfort and warmth</li>
-                  <li>Rough textures: Grounding and stability</li>
-                  <li>Smooth surfaces: Cleanliness and order</li>
-                  <li>Natural materials: Connection to nature</li>
-                </ul>
-              </p>
+              <p>The role of texture in emotional response:</p>
+              <ul>
+                <li>Soft textures: Comfort and warmth</li>
+                <li>Rough textures: Grounding and stability</li>
+                <li>Smooth surfaces: Cleanliness and order</li>
+                <li>Natural materials: Connection to nature</li>
+              </ul>
 
               <h2>Room-Specific Psychology</h2>
-              <p>Psychological considerations for different spaces:
-                <ul>
-                  <li>Bedroom: Rest and relaxation</li>
-                  <li>Kitchen: Nourishment and gathering</li>
-                  <li>Living Room: Social interaction and comfort</li>
-                  <li>Home Office: Focus and productivity</li>
-                </ul>
-              </p>
+              <p>Psychological considerations for different spaces:</p>
+              <ul>
+                <li>Bedroom: Rest and relaxation</li>
+                <li>Kitchen: Nourishment and gathering</li>
+                <li>Living Room: Social interaction and comfort</li>
+                <li>Home Office: Focus and productivity</li>
+              </ul>
 
               <h2>Biophilic Design</h2>
-              <p>Connecting with nature indoors:
-                <ul>
-                  <li>Natural materials and patterns</li>
-                  <li>Indoor plants and greenery</li>
-                  <li>Natural light and views</li>
-                  <li>Water features and natural sounds</li>
-                </ul>
-              </p>
+              <p>Connecting with nature indoors:</p>
+              <ul>
+                <li>Natural materials and patterns</li>
+                <li>Indoor plants and greenery</li>
+                <li>Natural light and views</li>
+                <li>Water features and natural sounds</li>
+              </ul>
 
               <h2>Personalization and Identity</h2>
-              <p>The importance of personal space:
-                <ul>
-                  <li>Personal artifacts and memories</li>
-                  <li>Cultural influences</li>
-                  <li>Individual style expression</li>
-                  <li>Creating meaningful spaces</li>
-                </ul>
-              </p>
+              <p>The importance of personal space:</p>
+              <ul>
+                <li>Personal artifacts and memories</li>
+                <li>Cultural influences</li>
+                <li>Individual style expression</li>
+                <li>Creating meaningful spaces</li>
+              </ul>
 
               <h2>Conclusion</h2>
               <p>Understanding the psychological impact of interior design allows us to create spaces that not only look beautiful but also support our mental and emotional well-being. By considering color, light, space, texture, and personal elements, we can design environments that enhance our quality of life and promote positive psychological states.</p>
