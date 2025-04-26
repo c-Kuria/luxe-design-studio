@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "What geographic areas do you serve?",
     answer:
-      "We primarily serve the New York metropolitan area, including Manhattan, Brooklyn, Queens, and nearby areas in New Jersey and Connecticut. For larger projects, we're available to travel throughout the United States and internationally. We also offer virtual design services for clients outside our local service area.",
+      "We primarily serve the Nairobi metropolitan area, including Manhattan, Brooklyn, Queens, and nearby areas in New Jersey and Connecticut. For larger projects, we're available to travel throughout the United States and internationally. We also offer virtual design services for clients outside our local service area.",
   },
   {
     question: "How do I get started with Fanisi Atelier?",
